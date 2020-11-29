@@ -1,5 +1,8 @@
 package com.example.arkaandroidtwo.TugasWeek3
 
+import java.util.*
+import java.text.SimpleDateFormat
+
 fun main(){
     var year: Int?
 
@@ -17,6 +20,9 @@ fun main(){
 }
 
 fun checkAge(year:Int) {
-    val age = 2020 - year
+    val cal = Calendar.getInstance()
+    val date = SimpleDateFormat("yyyy", Locale.getDefault())
+    val yearNow = date.format(cal.time).toInt()
+    val age = yearNow - year
     println("Your age is $age")
 }

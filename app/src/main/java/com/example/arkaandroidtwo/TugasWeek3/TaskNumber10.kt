@@ -30,11 +30,11 @@ fun printWords(word: String){
 
     var str3 = str.toCharArray().sorted()
 
-    for (i in 0 until str.length){
-        println(str3.get(i))
+    for (j in 0 until str3.size){
+        println(str3.get(j))
     }
 
-    for (i in 0 until str2.length){
-        println(str2.get(i))
+    for (k in 0 until str2.length){
+        println(str2.get(k))
     }
 }
