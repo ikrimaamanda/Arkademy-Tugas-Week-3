@@ -3,7 +3,6 @@ package com.example.arkaandroidtwo.TugasWeek3
 fun main() {
     println("Enter the words you want to reverse:")
     var words = readLine().toString()
-    words.toLowerCase()
     var splitWords = words.split(" ")
     var a = splitWords.size
 
